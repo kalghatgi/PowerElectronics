@@ -1,0 +1,20 @@
+# v1.1
+## 2D model
+* Reduced the core's cross-section area for reducing the inductance.
+## Schematics
+* Switched to KiCAD 9
+* Added a symbol for connector pins, inorder to introduce a Net-name for the traces.
+## Board
+* Imported the design using .dxf out of the 3D modelling software.
+* Scaled upto 10 layers for primary, and 2 layers for secondary.
+## Simulation
+* Imported ODB++ model for simulation of inductance and the switching frequency response.
+
+# v1.0
+## 2D model
+* Designed a flyback transformer for 1200Vdc --> 2.1Vdc, 10Adc, using 3D modelling softwares.
+## Schematics
+* Nothing here.
+## Board
+* Imported the design using .dxf out of the 3D modelling software.
+* Scaled upto 10 layers for primary, and 2 layers for secondary.
