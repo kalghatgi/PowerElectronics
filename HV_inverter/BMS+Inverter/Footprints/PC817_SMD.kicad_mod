@@ -1,0 +1,234 @@
+(footprint "PC817_SMD"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -3.07 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "3c87c2c3-c06a-418d-b31e-20869a217967")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "DIP_SMD"
+		(at 0 7 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a59a29e9-8540-4a1a-924b-563ecd4d0e07")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 -90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "17775d58-e370-4bba-b250-78d024d36789")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 -90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ce39372a-4677-4c91-8a34-3e7206d49301")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 -90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2247a4ab-63ac-43a5-a279-dee83aa611c8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "https://robu.in/product/pc817-smd-4-transistor-output-optocoupler-pack-of-5-ics/"
+		(at 0 5 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f02d0b6d-51e8-49ba-9979-6fa2c186954e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "MPN" ""
+		(at 0 0 -90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d4858470-2d43-4b43-9fc5-69067e3a6c6c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.925 -1.27)
+		(end -1.125 -2.07)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6d97e532-ad6e-46eb-b5db-83d3bca937d3")
+	)
+	(fp_line
+		(start -1.925 2.07)
+		(end -1.925 -1.27)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3e61cd9e-c7e6-4c88-837d-3a9e78401aa0")
+	)
+	(fp_line
+		(start -1.125 -2.07)
+		(end 1.925 -2.07)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "71082c2a-cf35-4e38-b173-a88a3e02be0a")
+	)
+	(fp_line
+		(start 1.925 -2.07)
+		(end 1.925 2.07)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "757e9ab2-9e1f-43fe-bde2-cabab25b354c")
+	)
+	(fp_line
+		(start 1.925 2.07)
+		(end -1.925 2.07)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "15e9803f-6b7c-442b-9aaa-6adc21dfbf15")
+	)
+	(fp_line
+		(start -4.18 -1.82)
+		(end 4.18 -1.82)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "0cab4d84-daa3-4513-84d3-09147e396a6b")
+	)
+	(fp_line
+		(start -4.18 1.82)
+		(end -4.18 -1.82)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "c976ded6-b2e7-40cf-8532-0931b733874a")
+	)
+	(fp_line
+		(start 4.18 -1.82)
+		(end 4.18 1.82)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "5b7a6425-969d-41db-b7fa-ee8f6e7a4576")
+	)
+	(fp_line
+		(start 4.18 1.82)
+		(end -4.18 1.82)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "838261e7-c3c9-4459-84fc-496a4aef67cf")
+	)
+	(fp_rect
+		(start -4.2 -1.8)
+		(end 4.2 1.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "406d76cf-4afb-4e66-b546-e58d646b5470")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -2.9 0.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "c707dc1d-3b05-4e53-9aa6-9261d5930989")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(pad "1" smd rect
+		(at -3.175 -1.27 270)
+		(size 0.6 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "3de3de9d-ce7b-40fa-8c0a-9738d0dca252")
+	)
+	(pad "2" smd rect
+		(at -3.175 1.27 270)
+		(size 0.6 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "2bc98811-83b4-4c0d-83cd-5a8b980e4d4b")
+	)
+	(pad "3" smd rect
+		(at 3.175 1.27 270)
+		(size 0.6 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "524d075f-fbbf-4c67-a5aa-2bbd3e054a99")
+	)
+	(pad "4" smd rect
+		(at 3.175 -1.27 270)
+		(size 0.6 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "eab703bb-3ead-4c35-9d78-dc75b1e1d9bd")
+	)
+)
