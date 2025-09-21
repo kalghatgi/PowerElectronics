@@ -1,0 +1,15 @@
+Features of the suggested DC-DC converter solution
+
+Modular and scalable architecture to support incremental number of electrolysers.
+Converts voltage from solar-grid input (400 Vdc – 1200 Vdc) to electrolyser-compatible voltage (1.9 Vdc – 2.1 Vdc), supporting currents from 5 A to 20 A.
+Enables multiple electrolysers to be connected in parallel at the converter output, improving scalability and modularity.
+Traditional systems typically require electrolysers to be connected in series to match the high DC bus voltage from solar grids; such design depends heavily on sunlight availability, resulting in fluctuating hydrogen production and suboptimal efficiency.
+Maintains a near-constant output voltage and current, ensuring consistent hydrogen production even with varying solar input conditions.
+Continuously monitors both input and output power through IoT integration, providing real-time data visualization on an online dashboard.
+Allows remote control of electrolyser startup and shutdown via the same dashboard, enhancing operational flexibility and safety.
+Estimates hydrogen production in real time using converter data analytics, enabling better planning and tracking of system performance.
+Achieves up to 95% efficiency across most of the operating range, optimizing energy utilization and reducing operational costs.
+Supports customization according to specific application requirements and compliance with relevant international standards.
+Protections such as overvoltage, overcurrent, reverse polarity, and thermal shutdown, which are critical for reliability and safety.
+Product shall meet the EMI-EMC standards (important for industrial and utility-scale installations).
+Ability to withstand harsh environmental conditions (e.g., temperature, dust, humidity).
