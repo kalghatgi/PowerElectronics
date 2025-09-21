@@ -1,3 +1,17 @@
+# v1.2
+## 2D model
+* No changes here.
+## 3D model
+* Created a model for the toroidal core.
+* Created an assembly of the planar transformer with toroidal core and winding.
+## Schematics
+* Added more pins for secondary current transfer.
+## Board
+* Changed the winding arrangement from El-->toroidal type.
+* Reduced the number of layers from 12-->6.
+## Simulation
+* Nothing here.
+
 # v1.1
 ## 2D model
 * Reduced the core's cross-section area for reducing the inductance.

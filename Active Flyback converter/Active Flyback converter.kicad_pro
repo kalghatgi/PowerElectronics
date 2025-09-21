@@ -505,7 +505,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Fabrication/Gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "Outputs/Active Flyback converter.step",
