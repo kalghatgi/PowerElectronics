@@ -1,0 +1,262 @@
+(footprint "RES_Y14860R00010F9R_VIS_1"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(tags "Y14860R00010F9R ")
+	(property "Reference" "R74"
+		(at 0 -5.334 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1f213b9d-b813-4339-96cd-9d1172c4ebfc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "100uOhm, 15W"
+		(at 0 10 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "22b01235-2864-4b04-a218-c3cc25a855c1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b3d057ff-5e21-4bce-b276-e647c3ed2a42")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0d15cd17-56e2-4103-8487-c28c228ead31")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Shunt resistor, US symbol"
+		(at 0 14.25 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9b2fb989-9080-48cd-bd40-66f8584c0f82")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "https://in.element14.com/vishay-foil-resistors/y14860r00010f9r/current-sense-res-r0001-15w-0603/dp/4009239"
+		(at 0 12 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "301786ee-cd5f-4071-8899-42e391d51548")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -7.6 -1)
+		(end -7.6 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "be1fbc26-5e1a-4465-ab11-057edc7a6370")
+	)
+	(fp_line
+		(start -1 -3.8)
+		(end 1 -3.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "2bc87bb1-d1a1-4ed4-a007-840a0012f3e4")
+	)
+	(fp_line
+		(start -1 3.8)
+		(end 1 3.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "bb94d388-70ca-428d-9967-e2264464fe7a")
+	)
+	(fp_line
+		(start 7.6 -1)
+		(end 7.6 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "ee3975d1-3f57-4500-9b0c-b0e712379dcd")
+	)
+	(fp_rect
+		(start -7.5 -3.8)
+		(end -3.3 3.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "Dwgs.User")
+		(uuid "75e52261-15fe-4d7c-a715-b4e7eb15576d")
+	)
+	(fp_rect
+		(start 3.3 -3.8)
+		(end 7.5 3.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "Dwgs.User")
+		(uuid "7f60c754-d32f-4647-8557-b60d675131e7")
+	)
+	(fp_rect
+		(start -7.7 -4)
+		(end 7.7 4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "f909a82e-06ad-42c2-be48-ce1764edf009")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "cc0a5d38-c34a-454b-94ae-fae6b5e154bc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -6 0)
+		(size 3 2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "e432be88-1463-4a69-9659-e91bab1ebb45")
+	)
+	(pad "1" smd rect
+		(at -5.4 -2.075)
+		(size 4.2 3.45)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "2536f0be-40c4-4fca-8a9e-7583cd3e3517")
+	)
+	(pad "1" smd rect
+		(at -5.4 2.075)
+		(size 4.2 3.45)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "bdb53a50-0120-49d3-ae3c-4a2f7c428952")
+	)
+	(pad "2" smd rect
+		(at -3.8 0)
+		(size 1 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "ff346aa5-c735-43c8-94cf-be87b2ad1e34")
+	)
+	(pad "3" smd rect
+		(at 3.8 0)
+		(size 1 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "4f793080-c091-494f-bf36-e5200244c1fe")
+	)
+	(pad "4" smd rect
+		(at 5.4 -2.075)
+		(size 4.2 3.45)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "34482709-c5ee-4a2e-9c9b-99bf7f5554b9")
+	)
+	(pad "4" smd rect
+		(at 5.4 2.075)
+		(size 4.2 3.45)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "c7f03a61-2f7b-4121-94db-1bae212bdd93")
+	)
+	(pad "4" smd rect
+		(at 6 0)
+		(size 3 2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "48cdaf5a-3d18-474d-8779-08d359355abf")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "830e7839-3843-40cd-a3e4-73b844f3ef1c")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -5.1 -0.3) (xy 5.1 -0.3) (xy 5.1 0.3) (xy -5.1 0.3)
+			)
+		)
+	)
+	(model "${KIPRJMOD}/3D/Y14860R00010F9R.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,193 @@
+(footprint "M3 x 6mm brass threaded hex spacer"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Mounting Hole 3.2mm, no annular, M3")
+	(tags "mounting hole 3.2mm no annular m3")
+	(property "Reference" "REF**"
+		(at 0 -4.2 0)
+		(layer "F.SilkS")
+		(uuid "6b2f9f3e-9c04-460e-ab7e-be9d66dfc170")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "M3 x 6mm brass threaded hex spacer"
+		(at 0 4.2 0)
+		(layer "F.Fab")
+		(uuid "9edf2490-9469-44a1-85c3-18e287f74a6f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4bdf12f2-ce57-49bd-95e9-e796839d9f81")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a9bb0280-fec8-4834-8be7-82c2ac7ed76a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc9eb531-53bc-4288-bcde-264ceea0a963")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_poly
+		(pts
+			(xy -2.7 1.3) (xy -2.7 -1.3) (xy -1.5 -0.7) (xy -1.7 0) (xy -1.5 0.7)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Paste")
+		(uuid "3f63d061-4d37-44b5-a2f5-51576afd1774")
+	)
+	(fp_poly
+		(pts
+			(xy -2.475833 -1.688269) (xy -0.224167 -2.988269) (xy -0.143782 -1.649039) (xy -0.85 -1.472244) (xy -1.356218 -0.949039)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Paste")
+		(uuid "a32da5a6-12a7-4da2-a572-66e32abc6777")
+	)
+	(fp_poly
+		(pts
+			(xy -0.224167 2.988269) (xy -2.475833 1.688269) (xy -1.356218 0.949039) (xy -0.85 1.472244) (xy -0.143782 1.649039)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Paste")
+		(uuid "77632340-8897-4835-974d-7a351eb981d8")
+	)
+	(fp_poly
+		(pts
+			(xy 0.224167 -2.988269) (xy 2.475833 -1.688269) (xy 1.356218 -0.949039) (xy 0.85 -1.472244) (xy 0.143782 -1.649039)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Paste")
+		(uuid "17093e48-e93c-416a-a4dc-d089c6dd931c")
+	)
+	(fp_poly
+		(pts
+			(xy 2.475833 1.688269) (xy 0.224167 2.988269) (xy 0.143782 1.649039) (xy 0.85 1.472244) (xy 1.356218 0.949039)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Paste")
+		(uuid "0fe8f9e6-fd34-4636-9b87-04a1c9d74784")
+	)
+	(fp_poly
+		(pts
+			(xy 2.7 -1.3) (xy 2.7 1.3) (xy 1.5 0.7) (xy 1.7 0) (xy 1.5 -0.7)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Paste")
+		(uuid "4796ee11-b805-4ed5-9a12-44bd9dcab6a5")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3.2 0)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill none)
+		(layer "Cmts.User")
+		(uuid "8baede52-c088-4b1d-9d27-aeca543abbe1")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3.45 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "792ad080-71b4-4d5d-8a54-da90f341ce7d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "8c11b0c0-6371-43ee-838a-2f470c65b79b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 3.2 3.2)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "fa055336-61f5-479c-bf43-b9204a2cfbf2")
+	)
+	(model "${KIPRJMOD}/3D/M3x7mm brass threaded spacer.stp"
+		(offset
+			(xyz 0 0 7)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
+	)
+)

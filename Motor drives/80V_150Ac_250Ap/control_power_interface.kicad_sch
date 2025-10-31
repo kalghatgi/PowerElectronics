@@ -1,0 +1,56 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "7e1262de-3951-42ae-afe4-7f4f66e367d0")
+	(paper "A4")
+	(lib_symbols)
+	(bus_alias "signals"
+		(members "pU_gH" "pU_sH" "pU_gL" "pU_sL" "pV_gH" "pV_sH" "pV_gL" "pV_sL"
+			"pW_gH" "pW_sH" "pW_gL" "pW_sL" "I_U+" "I_U-" "I_V+" "I_V-" "I_W+" "I_W-"
+			"V_U" "V_V" "V_W" "V_DC" "HV+" "HV-" "NTC_A" "NTC_B"
+		)
+	)
+	(bus
+		(pts
+			(xy 142.875 63.5) (xy 142.875 120.015)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b4df0ed-40e9-428a-9fbe-cfb3a4554e6a")
+	)
+	(bus
+		(pts
+			(xy 147.955 63.5) (xy 142.875 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0a44c53-64a3-444a-84bd-e48082fba3ca")
+	)
+	(global_label "{signals}"
+		(shape bidirectional)
+		(at 147.955 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7eacff3b-e8f0-4ebd-946d-a23f80387719")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.4325 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+)
