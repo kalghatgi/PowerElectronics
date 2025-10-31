@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<ccsVariant value="0:Eclipse-based"/>
+	<ccsVersion value="12.8.0"/>
+	<deviceVariant value="TMS320C28XX.TMS320F2800137"/>
+	<deviceFamily value="C2000"/>
+	<deviceEndianness value="little"/>
+	<codegenToolVersion value="22.6.1.LTS"/>
+	<isElfFormat value="true"/>
+	<rts value="libc.a"/>
+	<createSlaveProjects value=""/>
+	<templateProperties value="id=empty_sysconfig_48rgz.projectspec.empty_sysconfig_48rgz"/>
+	<origin value="C:\ti\C2000Ware_6_00_00_00\driverlib\f280013x\examples\pinmux\CCS\empty_sysconfig_48rgz.projectspec"/>
+	<filesToOpen value=""/>
+	<isTargetManual value="true"/>
+</projectOptions>
