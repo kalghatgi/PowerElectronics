@@ -1,0 +1,56 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "a89f6441-00c1-41bd-bd85-65e27d376b99")
+	(paper "A5")
+	(lib_symbols)
+	(bus_alias "C2P"
+		(members "GND" "pB_HG" "pB_HS" "pB_LG" "pA_HG" "pA_HS" "pA_LG" "sB_HG"
+			"sB_HS" "sB_LG" "sA_HG" "sA_HS" "sA_LG" "3.3V" "12V" "V_lv" "V_hv" "I_lv+"
+			"I_lv-"
+		)
+	)
+	(bus
+		(pts
+			(xy 142.875 47.625) (xy 142.875 71.755)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e1a59d2-5c86-43ef-b262-2c08f8d0f624")
+	)
+	(bus
+		(pts
+			(xy 142.875 47.625) (xy 155.575 47.625)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fd2ee87-a11b-430b-a295-71ee2a0e7f7b")
+	)
+	(global_label "{C2P}"
+		(shape bidirectional)
+		(at 155.575 47.625 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e2a4ff56-ee26-4be3-9294-f2e59a21162f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.1144 47.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+)

@@ -1,0 +1,162 @@
+/**
+ * These arguments were used when this file was generated. They will be automatically applied on subsequent loads
+ * via the GUI or CLI. Run CLI with '--help' for additional information on how to override these arguments.
+ * @cliArgs --device "F280013x" --part "F280013x_48RGZ" --package "48RGZ" --context "system" --product "C2000WARE@6.00.00.00"
+ * @v2CliArgs --device "TMS320F2800133" --package "48RGZ" --context "system" --product "C2000WARE@6.00.00.00"
+ * @versions {"tool":"1.24.2+4234"}
+ */
+
+/**
+ * Import the modules used in this configuration.
+ */
+const adc     = scripting.addModule("/driverlib/adc.js", {}, false);
+const adc1    = adc.addInstance();
+const analog  = scripting.addModule("/driverlib/analog.js", {}, false);
+const analog1 = analog.addInstance();
+const asysctl = scripting.addModule("/driverlib/asysctl.js");
+const can     = scripting.addModule("/driverlib/can.js", {}, false);
+const can1    = can.addInstance();
+const epwm    = scripting.addModule("/driverlib/epwm.js");
+const epwm1   = epwm.addInstance();
+const epwm2   = epwm.addInstance();
+const epwm3   = epwm.addInstance();
+const epwm4   = epwm.addInstance();
+const epwm5   = epwm.addInstance();
+const epwm6   = epwm.addInstance();
+const gpio    = scripting.addModule("/driverlib/gpio.js", {}, false);
+const gpio1   = gpio.addInstance();
+const gpio2   = gpio.addInstance();
+
+/**
+ * Write custom configuration values to the imported modules.
+ */
+adc1.$name                    = "myADC0";
+adc1.adcClockPrescaler        = "ADC_CLK_DIV_3_0";
+adc1.enabledInts              = ["ADC_INT_NUMBER1"];
+adc1.enableInterrupt1         = true;
+adc1.registerInterrupts       = ["1"];
+adc1.soc0SampleWindow         = 9;
+adc1.enabledSOCs              = ["ADC_SOC_NUMBER0","ADC_SOC_NUMBER1","ADC_SOC_NUMBER2","ADC_SOC_NUMBER3","ADC_SOC_NUMBER4","ADC_SOC_NUMBER5"];
+adc1.soc1Channel              = "ADC_CH_ADCIN1";
+adc1.soc1SampleWindow         = 9;
+adc1.soc2Channel              = "ADC_CH_ADCIN2";
+adc1.soc2SampleWindow         = 9;
+adc1.soc3Channel              = "ADC_CH_ADCIN3";
+adc1.soc3SampleWindow         = 9;
+adc1.soc4SampleWindow         = 9;
+adc1.soc4Channel              = "ADC_CH_ADCIN4";
+adc1.soc5Channel              = "ADC_CH_ADCIN5";
+adc1.soc5SampleWindow         = 9;
+adc1.interrupt1SOCSource      = "ADC_SOC_NUMBER5";
+adc1.adcInt1.interruptHandler = "control_ISR_0";
+adc1.adcInt1.$name            = "ADC_INT_0";
+adc1.adcInt1.enableInterrupt  = true;
+
+adc1.analog              = analog1;
+analog1.$name            = "ADC_pins";
+analog1.useCase          = "CUSTOM";
+analog1.useInterfacePins = ["A0/C15/CMP1_DACL","A1","A2/C9, GPIO224","A3/C5, GPIO242","A4/C14","A5/C2","A6, C6, GPIO226, GPIO228"];
+
+asysctl.analogReferenceVoltage = "1P65";
+
+can1.$name                 = "myCAN0";
+can1.can.$assign           = "CANA";
+can1.can.can_rxPin.$assign = "A10/C10, GPIO230";
+can1.can.can_txPin.$assign = "A19/C19, GPIO13";
+
+const mux4       = system.clockTree["XTAL_OR_X1"];
+mux4.inputSelect = "X1";
+
+epwm1.$name                  = "PWM_line";
+epwm1.epwmDeadband_enableRED = true;
+epwm1.epwmDeadband_enableFED = true;
+epwm1.epwmDeadband_delayRED  = 200;
+epwm1.epwmDeadband_delayFED  = 200;
+epwm1.epwm.$assign           = "EPWM6";
+epwm1.epwm.epwm_aPin.$assign = "GPIO18, X2";
+epwm1.epwm.epwm_bPin.$assign = "GPIO19, X1";
+
+epwm2.$name                  = "PWM_neutral";
+epwm2.epwmDeadband_enableRED = true;
+epwm2.epwmDeadband_delayRED  = 200;
+epwm2.epwmDeadband_enableFED = true;
+epwm2.epwmDeadband_delayFED  = 200;
+epwm2.epwm.$assign           = "EPWM5";
+epwm2.epwm.epwm_aPin.$assign = "GPIO16";
+epwm2.epwm.epwm_bPin.$assign = "GPIO9";
+
+epwm3.$name                         = "PWM_primary_A";
+epwm3.epwmDeadband_enableRED        = true;
+epwm3.epwmDeadband_delayRED         = 200;
+epwm3.epwmDeadband_enableFED        = true;
+epwm3.epwmDeadband_delayFED         = 200;
+epwm3.epwmTimebase_counterMode      = "EPWM_COUNTER_MODE_UP_DOWN";
+epwm3.epwmTimebase_period           = 600;
+epwm3.epwmTimebase_syncOutPulseMode = ["EPWM_SYNC_OUT_PULSE_ON_CNTR_ZERO"];
+epwm3.epwm.$assign                  = "EPWM4";
+epwm3.epwm.epwm_aPin.$assign        = "GPIO24";
+epwm3.epwm.epwm_bPin.$assign        = "GPIO32";
+
+epwm4.$name                         = "PWM_primary_B";
+epwm4.epwmDeadband_enableRED        = true;
+epwm4.epwmDeadband_delayRED         = 200;
+epwm4.epwmDeadband_enableFED        = true;
+epwm4.epwmDeadband_delayFED         = 200;
+epwm4.epwmTimebase_period           = 600;
+epwm4.epwmTimebase_counterMode      = "EPWM_COUNTER_MODE_UP_DOWN";
+epwm4.epwmTimebase_syncOutPulseMode = ["EPWM_SYNC_OUT_PULSE_ON_CNTR_ZERO"];
+epwm4.epwm.$assign                  = "EPWM3";
+epwm4.epwm.epwm_aPin.$assign        = "GPIO4";
+epwm4.epwm.epwm_bPin.$assign        = "GPIO5";
+
+epwm5.$name                          = "PWM_secondary_A";
+epwm5.epwmDeadband_enableRED         = true;
+epwm5.epwmDeadband_delayRED          = 200;
+epwm5.epwmDeadband_enableFED         = true;
+epwm5.epwmDeadband_delayFED          = 200;
+epwm5.epwmTimebase_counterMode       = "EPWM_COUNTER_MODE_UP_DOWN";
+epwm5.epwmTimebase_period            = 600;
+epwm5.epwmTimebase_phaseEnable       = true;
+epwm5.epwmTimebase_syncInPulseSource = "EPWM_SYNC_IN_PULSE_SRC_SYNCOUT_EPWM6";
+epwm5.epwmCounterCompare_cmpA        = 600;
+epwm5.epwmTimebase_phaseShift        = 588;
+epwm5.epwm.$assign                   = "EPWM2";
+epwm5.epwm.epwm_aPin.$assign         = "GPIO7";
+epwm5.epwm.epwm_bPin.$assign         = "GPIO3";
+
+epwm6.$name                          = "PWM_secondary_B";
+epwm6.epwmDeadband_enableRED         = true;
+epwm6.epwmDeadband_delayRED          = 200;
+epwm6.epwmDeadband_enableFED         = true;
+epwm6.epwmDeadband_delayFED          = 200;
+epwm6.epwmTimebase_period            = 600;
+epwm6.epwmTimebase_counterMode       = "EPWM_COUNTER_MODE_UP_DOWN";
+epwm6.epwmTimebase_phaseEnable       = true;
+epwm6.epwmTimebase_phaseShift        = 588;
+epwm6.epwmTimebase_syncInPulseSource = "EPWM_SYNC_IN_PULSE_SRC_SYNCOUT_EPWM7";
+epwm6.epwmCounterCompare_cmpA        = 600;
+epwm6.epwm.$assign                   = "EPWM1";
+epwm6.epwm.epwm_aPin.$assign         = "GPIO0";
+epwm6.epwm.epwm_bPin.$assign         = "GPIO1";
+
+gpio1.$name                    = "Lock_detection";
+gpio1.gpioPin.$assign          = "GPIO2";
+gpio1.gpioPin["GPIO#"].$assign = "GPIO2";
+
+gpio2.$name = "Fault_indication";
+
+/**
+ * Pinmux solution for unlocked pins/peripherals. This ensures that minor changes to the automatic solver in a future
+ * version of the tool will not impact the pinmux you originally saw.  These lines can be completely deleted in order to
+ * re-solve from scratch.
+ */
+analog1.analog.$suggestSolution                                = "ANALOG";
+analog1.analog["a0/c15/cmp1_daclPin"].$suggestSolution         = "A0/C15/CMP1_DACL";
+analog1.analog.a1Pin.$suggestSolution                          = "A1";
+analog1.analog["a2/c9, gpio224Pin"].$suggestSolution           = "A2/C9, GPIO224";
+analog1.analog["a3/c5, gpio242Pin"].$suggestSolution           = "A3/C5, GPIO242";
+analog1.analog["a4/c14Pin"].$suggestSolution                   = "A4/C14";
+analog1.analog["a5/c2Pin"].$suggestSolution                    = "A5/C2";
+analog1.analog["a6, c6, gpio226, gpio228Pin"].$suggestSolution = "A6, C6, GPIO226, GPIO228";
+gpio2.gpioPin.$suggestSolution                                 = "GPIO6";
+gpio2.gpioPin["GPIO#"].$suggestSolution                        = "GPIO6";

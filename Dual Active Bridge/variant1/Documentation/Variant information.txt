@@ -1,0 +1,9 @@
+DC Vin = 40V to 70V
+DC Vout = 9V to 15V, 300A
+
+Transformer calculations:
+
+N = ((70+40)/2) / ((15+9)/2) = 55/12 = 4.58:1 ~= 5:1
+F = 20KHz
+P = 5*((70+40)/2)*((15+9)/2)*1.5708*(3.1416-1.5708) / (2*(3.1416)^2*20000*L_leakage) = 3600W
+Therefore, L_leakage >= 5.73uH
