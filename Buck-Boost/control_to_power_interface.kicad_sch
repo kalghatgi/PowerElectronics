@@ -6,8 +6,8 @@
 	(paper "A5")
 	(lib_symbols)
 	(bus_alias "C2P"
-		(members "V_hv" "V_lv" "GND" "HG" "HS" "LG" "Iin_+" "Iin_-" "Iout_+" "Iout_-"
-			"12V" "3.3V" "HV+"
+		(members "V_hv" "V_lv" "GND" "HG" "HS" "LG" "I_hv_+" "I_hv_-" "I_lv_+"
+			"I_lv_-" "12V" "3.3V" "HV+" "LV+"
 		)
 	)
 	(bus
